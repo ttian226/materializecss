@@ -1,2 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
+sass/materialize.css
+sass/materialize.css.map
+sass/app
