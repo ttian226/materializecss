@@ -32,6 +32,11 @@
     padding: 0 ($gutter-width / 2);
     min-height: 1px;
 
+    &[class*="push-"],
+    &[class*="pull-"] {
+      position: relative;
+    }
+
     $i: 1;
     @while $i <= $num-cols {
       &.s#{$i} {
@@ -39,6 +44,23 @@
         //margin-left: auto;
         //left: auto;
         //right: auto;
+      }
+      $i: $i + 1;
+    }
+
+    $i: 1;
+    @while $i <= $num-cols {
+      $perc: unquote(100 / $num-cols * $i + '%');
+      &.offset-s#{$i} {
+        margin-left: $perc;
+      }
+
+      &.push-s#{$i} {
+        left: $perc;
+      }
+
+      &.pull-s#{$i} {
+        right: $perc;
       }
       $i: $i + 1;
     }
