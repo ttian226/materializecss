@@ -6,3 +6,7 @@ html {
   box-sizing: inherit;
 }
 
+.divider {
+  height: 1px;
+  background-color: color('grey', 'lighten-2');
+}
