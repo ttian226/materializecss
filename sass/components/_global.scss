@@ -102,3 +102,10 @@ html {
     display: block !important;
   }
 }
+
+.truncate {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
