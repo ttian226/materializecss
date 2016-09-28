@@ -28,6 +28,10 @@ $medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
 $num-cols: 12 !default;
 $gutter-width: 1.5rem !default;
 
+// Tables
+$table-border-color: #d0d0d0 !default;
+$table-striped-color: #f2f2f2 !default;
+
 // Typography
 $off-black: rgba(0, 0, 0, 0.87) !default;
 
